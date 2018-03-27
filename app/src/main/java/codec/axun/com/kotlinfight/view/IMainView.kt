@@ -1,4 +1,6 @@
-package codec.axun.com.kotlinfight
+package codec.axun.com.kotlinfight.view
+
+import codec.axun.com.kotlinfight.bean.Picture
 
 /**
  * Created by Administrator on 2018/3/26.
@@ -9,7 +11,7 @@ interface IMainView {
     //隐藏加载框
     fun hideProgress()
     //显示数据
-    fun showData(items:List<XiaoHua>)
+    fun showData(items:List<Picture>)
 
 
 }

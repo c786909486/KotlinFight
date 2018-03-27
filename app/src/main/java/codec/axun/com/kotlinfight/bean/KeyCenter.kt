@@ -1,4 +1,4 @@
-package codec.axun.com.kotlinfight
+package codec.axun.com.kotlinfight.bean
 
 /**
  * Created by Administrator on 2018/3/26.

@@ -32,5 +32,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     implementation 'com.android.support:design:26.1.0'
     implementation 'org.jsoup:jsoup:1.10.1'
-    implementation files('src/main/libs/glide-3.7.0.jar')
+    compile 'com.lcodecorex:tkrefreshlayout:1.0.7'
+    implementation files('libs/glide-3.7.0.jar')
 }

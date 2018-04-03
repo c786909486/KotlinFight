@@ -1,5 +1,6 @@
-package codec.axun.com.kotlinfight
+package codec.axun.com.kotlinfight.activity
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.DefaultItemAnimator
@@ -7,6 +8,7 @@ import android.support.v7.widget.StaggeredGridLayoutManager
 import android.util.Log
 import android.view.View
 import android.widget.Toast
+import codec.axun.com.kotlinfight.R
 import codec.axun.com.kotlinfight.adapter.ShowImageAdapte
 import codec.axun.com.kotlinfight.bean.KeyCenter
 import codec.axun.com.kotlinfight.bean.Picture
@@ -41,8 +43,11 @@ class MainActivity : AppCompatActivity(), IMainView {
         rv_show_image.adapter = mAdapter
         mAdapter.setOnItemClickListener(object :ShowImageAdapte.OnItemClickListener{
             override fun onItemClick(view: View, position: Int) {
-                toast.setText(items[position].title)
-                toast.show()
+//                toast.setText(items[position].title)
+//                toast.show()
+                val intent = Intent(this@MainActivity,ShowBigImageActivity::class.java)
+                intent.putExtra("data",items[position])
+                startActivity(intent)
             }
 
         })

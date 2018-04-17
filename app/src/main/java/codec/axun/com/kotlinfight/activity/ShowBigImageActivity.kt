@@ -137,6 +137,8 @@ class ShowBigImageActivity : AppCompatActivity(),IShowBigView{
             }else{
                 saveBitmap()
             }
+        }else{
+            saveBitmap()
         }
     }
 
